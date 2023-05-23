@@ -1,20 +1,4 @@
 body{ 
-    background: rgb(178,121,255);
-    background: linear-gradient(180deg, rgba(178,121,255,1) 17%, rgba(50,74,255,1) 38%, rgba(90,224,214,1) 55%, rgba(90,224,214,1) 78%, rgba(76,129,122,1) 86%);
+   background: rgb(178,121,255);
+background: linear-gradient(180deg, rgba(178,121,255,1) 20%, rgba(50,74,255,1) 39%, rgba(90,224,214,1) 61%, rgba(76,129,122,1) 80%, rgba(226,132,188,1) 97%);
 }
-
-body{
-    margin: 0%
-    padding: 0%
-    background: orange
-}
-  .search-box{
-
-    position:absolute;
-    top: 50%;
-    left: 50%;
-   transform: translate (-50%,-50%);
-   background:aqua;
-   height: 40px;
-   
-  }

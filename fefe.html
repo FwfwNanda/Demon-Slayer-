@@ -5,12 +5,96 @@
     <title> Demon Slayer </title>
     <script>alert("programa em JavaScript")</script>
     <script type="text/javascript">
-      var nomeVisitante= prompt("Olá visitante,digite seu nome:");
-     document.write("<center><h1>Seja bem-vindx,"+nomeVisitante+"</h1></center>");
+    var nomeVisitante= prompt("Olá visitante,digite seu nome:");
+   document.write("<center><h1>Seja bem-vindx,"+nomeVisitante+"</h1></center>");
     
    </script>
-   
+  
+<body>
+  <center>
+  <div class="tabs">
+  <span data-tab-value="#tab_1">Início</span>
+  <span data-tab-value="#tab_2">Shinobu</span>
+  <span data-tab-value="#tab_3">Tomioka</span>
+  <span data-tab-value="#tab_4">Muichiro</span>
+  <span data-tab-value="#tab_5">Obanai</span>
+  <span data-tab-value="#tab_6">Mitsuri</span>
+  <span data-tab-value="#tab_7">Tab-7</span>
 
+
+  </div>
+  
+  <div class="tab-content">
+  <div class="tabs__tab active" id="tab_1" data-tab-info>
+  </div>
+
+  <div class="tabs__tab" id="tab_2" data-tab-info>
+  <p>Shinobu se juntou aos Esquadrão de Exterminadores de
+     Demônios após a morte de seus pais. De poucas palavras
+     e aparência delicada, a Hashira esconde um profundo 
+     ódio pelos demônios.O desejo por vingança não se estende 
+     apenas pela morte de seus pais, mas também a de sua irmã,
+     morta pelas mãos de Doma, um dos Doze Kizuki.</p>
+  
+  </div>
+  <div class="tabs__tab" id="tab_3" data-tab-info>
+  <p>Giyu Tomioka, o Hashira da Água, é o primeiro Pilar a 
+    encontrar Nezuko e Tanjiro já no primeiro episódio da 
+    primeira temporada. Ele é o personagem responsável por
+    dar uma segunda chance à Nezuko e a ajudar Tanjiro a se 
+    tornar um Caçador de Demônios ao indicá-lo para treinar 
+    com Sakonji Urokodaki, o mesmo espadachin que o treinou.</p>
+  
+  </div> 
+
+<div class="tabs__tab" id="tab_4" data-tab-info>
+<p>Muichiro Tokito é filho de um pobre lenhador e sua esposa,
+   assim como Tanjiro Kamado, fazia parte de uma família muito
+   humilde que vivia em uma floresta distante.  Infelizmente sua 
+   família feliz não teve um bom destino,já que sua mãe morreu
+    após pegar um resfriado que evoluiu para uma doença mais grave e seu pai,
+   que partiu em busca de ervas medicinais para sua esposa, caiu do penhasco durante sua busca.</p>
+
+</div>
+
+<div class="tabs__tab" id="tab_5" data-tab-info>
+<p>Obanai é conhecido por sua personalidade severa e exigente quando se 
+   trata da Demon Slayer Corps e seus guerreiros. Ele tem uma imensa devoção
+   à Organização e pensa sobre o futuro dela, colocando seu dever acima de 
+   sua integridade física e de seus companheiros. </p>
+
+</div>
+
+<div class="tabs__tab" id="tab_6" data-tab-info>
+<p>Mitsuri é uma garota bastante doce e gentil, sempre sendo amorosa 
+   e agradável com todos ela acabou entrando para a Demon Slayer Corps
+   por um motivo bem superficial: encontrar um marido. Mas já abandonou
+   esse pensamento e acaba se sentindo culpada por essa ter sido sua motivação. </p>
+</div>
+
+<div class="tabs__tab" id="tab_7" data-tab-info>
+<p></p>
+</div>
+
+  </div>
+  <script type="text/javascript">
+  const tabs = document.querySelectorAll('[data-tab-value]')
+  const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          const target = document
+              .querySelector(tab.dataset.tabValue);
+  
+          tabInfos.forEach(tabInfo => {
+              tabInfo.classList.remove('active')
+          })
+          target.classList.add('active');
+      })
+  })
+  </script>
+  </center>
+</body> 
   <link rel="stylesheet" type="text/css" href="fefe.css">
     <center> <h1> <font color=purple>SHINOBU</font> <h1> </center> 
     <div class="video">
